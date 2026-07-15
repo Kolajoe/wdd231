@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+    <!-- Fond -->
+    <rect width="200" height="200" rx="15" fill="#3E2723"/>
+    
+    <!-- Grue -->
+    <rect x="150" y="40" width="6" height="100" fill="#c8963e"/>
+    <line x1="153" y1="40" x2="80" y2="70" stroke="#c8963e" stroke-width="4"/>
+    <line x1="80" y1="70" x2="80" y2="90" stroke="#c8963e" stroke-width="3"/>
+    <polygon points="153,35 160,45 146,45" fill="#e8d5a3"/>
+    
+    <!-- Conteneur de la grue -->
+    <rect x="70" y="90" width="20" height="15" fill="#e8d5a3" opacity="0.5"/>
+    
+    <!-- Bâtiment en construction -->
+    <rect x="40" y="80" width="30" height="60" fill="#c8963e" opacity="0.6"/>
+    <rect x="40" y="80" width="30" height="15" fill="#e8d5a3" opacity="0.5"/>
+    <rect x="45" y="100" width="8" height="8" fill="#1a3a5c" opacity="0.5"/>
+    <rect x="57" y="100" width="8" height="8" fill="#1a3a5c" opacity="0.5"/>
+    
+    <!-- Texte -->
+    <text x="100" y="165" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold">KINSHASA CONSTRUCTION</text>
+    <text x="100" y="182" font-family="Arial, sans-serif" font-size="8" fill="#c8963e" text-anchor="middle">ENGINEERING</text>
+</svg>

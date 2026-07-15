@@ -1,0 +1,84 @@
+{
+  "members": [
+    {
+      "name": "Kinshasa Energy Solutions",
+      "address": "123 Boulevard du 30 Juin, Kinshasa, DRC",
+      "phone": "+243 812 345 678",
+      "website": "https://kinshasa-energy.com",
+      "image": "kinshasa-energy.svg",
+      "membershipLevel": 3,
+      "description": "Leading provider of sustainable energy solutions in the DRC.",
+      "category": "Energy"
+    },
+    {
+      "name": "Congo PetroChem Industries",
+      "address": "456 Avenue de la Science, Kinshasa, DRC",
+      "phone": "+243 822 345 679",
+      "website": "https://congopetrochem.com",
+      "image": "congo-petrochem.svg",
+      "membershipLevel": 3,
+      "description": "Specializing in petrochemical refining and distribution.",
+      "category": "Petrochemical"
+    },
+    {
+      "name": "Kinshasa Digital Hub",
+      "address": "789 Rue de la Technologie, Kinshasa, DRC",
+      "phone": "+243 832 345 680",
+      "website": "https://kinshasa-digital.com",
+      "image": "kinshasa-digital.svg",
+      "membershipLevel": 2,
+      "description": "Co-working space and tech incubator for Congolese startups.",
+      "category": "Technology"
+    },
+    {
+      "name": "RDC Mining & Materials",
+      "address": "101 Avenue des Mines, Lubumbashi, DRC",
+      "phone": "+243 842 345 681",
+      "website": "https://rdc-mining.com",
+      "image": "rdc-mining.svg",
+      "membershipLevel": 3,
+      "description": "Extraction and processing of critical minerals and materials.",
+      "category": "Mining"
+    },
+    {
+      "name": "Kinshasa Logistics Group",
+      "address": "202 Port de Kinshasa, Kinshasa, DRC",
+      "phone": "+243 852 345 682",
+      "website": "https://kinshasa-logistics.com",
+      "image": "kinshasa-logistics.svg",
+      "membershipLevel": 2,
+      "description": "Comprehensive logistics and supply chain management services.",
+      "category": "Logistics"
+    },
+    {
+      "name": "Green Energy Congo",
+      "address": "303 Avenue du Fleuve, Kinshasa, DRC",
+      "phone": "+243 862 345 683",
+      "website": "https://green-energy-congo.com",
+      "image": "green-energy-congo.svg",
+      "membershipLevel": 1,
+      "description": "Renewable energy solutions including solar and hydro power.",
+      "category": "Renewable Energy"
+    },
+    {
+      "name": "Kinshasa Construction & Engineering",
+      "address": "404 Route de l'Aéroport, Kinshasa, DRC",
+      "phone": "+243 872 345 684",
+      "website": "https://kinshasa-construction.com",
+      "image": "kinshasa-construction.svg",
+      "membershipLevel": 2,
+      "description": "Infrastructure development and engineering consulting.",
+      "category": "Construction"
+    },
+    {
+      "name": "DRC Agri-Business Solutions",
+      "address": "505 Avenue de l'Agriculture, Kinshasa, DRC",
+      "phone": "+243 882 345 685",
+      "website": "https://drc-agribusiness.com",
+      "image": "drc-agribusiness.svg",
+      "membershipLevel": 1,
+      "description": "Sustainable agriculture and food processing solutions.",
+      "category": "Agriculture"
+    }
+  ]
+}

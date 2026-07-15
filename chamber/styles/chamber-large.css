@@ -1,0 +1,130 @@
+/* Media Query pour Desktop */
+@media screen and (min-width: 768px) {
+    /* HEADER */
+    header {
+        padding: 1rem 2rem;
+    }
+    
+    .logo-container img {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .logo-text h1 {
+        font-size: 1.8rem;
+    }
+    
+    .logo-text span {
+        font-size: 1rem;
+    }
+    
+    /* HAMBURGER BUTTON - Caché sur desktop */
+    #hamburgerBtn {
+        display: none;
+    }
+    
+    /* NAVIGATION - Affichage horizontal */
+    nav {
+        max-height: 100%;
+        overflow: visible;
+        background: var(--primary-color);
+        padding: 0 2rem;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0;
+    }
+    
+    nav ul li {
+        border-bottom: none;
+    }
+    
+    nav ul li a {
+        padding: 1rem 1.5rem;
+        border-bottom: 3px solid transparent;
+    }
+    
+    nav ul li a:hover {
+        background: none;
+        border-bottom-color: var(--secondary-color);
+    }
+    
+    nav ul li a.active {
+        background: none;
+        border-bottom-color: var(--secondary-color);
+    }
+    
+    /* PAGE HEADER */
+    .page-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+    }
+    
+    .page-header h1 {
+        font-size: 2.2rem;
+    }
+    
+    /* MEMBERS GRID - Desktop */
+    #membersContainer {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+    
+    .member-card img {
+        height: 180px;
+    }
+    
+    /* LIST VIEW - Desktop */
+    #membersContainer.list-view .member-card {
+        grid-template-columns: 100px 1fr 1fr;
+        padding: 1rem 1.5rem;
+    }
+    
+    #membersContainer.list-view .member-card img {
+        height: 100px;
+        width: 100px;
+    }
+    
+    #membersContainer.list-view .member-card .card-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        align-items: center;
+    }
+    
+    #membersContainer.list-view .member-card .card-body h3 {
+        grid-column: 1 / -1;
+    }
+    
+    #membersContainer.list-view .member-card .card-body .website {
+        grid-column: 1 / -1;
+    }
+    
+    /* FOOTER - Desktop */
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 3rem;
+    }
+    
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+        margin-top: 2rem;
+    }
+}
+
+/* Écrans très larges */
+@media screen and (min-width: 1200px) {
+    #membersContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    main {
+        padding: 2rem;
+    }
+}

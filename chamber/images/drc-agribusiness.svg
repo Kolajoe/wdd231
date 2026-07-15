@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+    <!-- Fond -->
+    <rect width="200" height="200" rx="15" fill="#33691E"/>
+    
+    <!-- Champ / Terre -->
+    <rect x="30" y="120" width="140" height="30" rx="3" fill="#c8963e" opacity="0.5"/>
+    
+    <!-- Plantes -->
+    <path d="M50 120 Q55 100 60 120" stroke="#c8963e" stroke-width="3" fill="none"/>
+    <path d="M55 115 Q60 95 65 115" stroke="#c8963e" stroke-width="2" fill="none"/>
+    <ellipse cx="60" cy="95" rx="8" ry="5" fill="#c8963e" opacity="0.7"/>
+    
+    <path d="M90 120 Q95 95 100 120" stroke="#c8963e" stroke-width="3" fill="none"/>
+    <path d="M95 115 Q100 90 105 115" stroke="#c8963e" stroke-width="2" fill="none"/>
+    <ellipse cx="100" cy="90" rx="10" ry="6" fill="#c8963e" opacity="0.7"/>
+    
+    <path d="M130 120 Q135 100 140 120" stroke="#c8963e" stroke-width="3" fill="none"/>
+    <path d="M135 115 Q140 95 145 115" stroke="#c8963e" stroke-width="2" fill="none"/>
+    <ellipse cx="140" cy="95" rx="8" ry="5" fill="#c8963e" opacity="0.7"/>
+    
+    <!-- Soleil -->
+    <circle cx="160" cy="40" r="15" fill="#e8d5a3" opacity="0.6"/>
+    
+    <!-- Texte -->
+    <text x="100" y="170" font-family="Arial, sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="bold">DRC AGRI-BUSINESS</text>
+    <text x="100" y="187" font-family="Arial, sans-serif" font-size="8" fill="#c8963e" text-anchor="middle">SOLUTIONS</text>
+</svg>
