@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+    <rect width="1200" height="630" fill="#1a3a5c"/>
+    <circle cx="600" cy="250" r="100" fill="#c8963e" opacity="0.3"/>
+    <circle cx="600" cy="250" r="60" fill="#c8963e" opacity="0.5"/>
+    <text x="600" y="350" font-family="Arial" font-size="48" fill="white" text-anchor="middle" font-weight="bold">Kinshasa Chamber</text>
+    <text x="600" y="410" font-family="Arial" font-size="24" fill="#c8963e" text-anchor="middle">of Commerce</text>
+    <text x="600" y="460" font-family="Arial" font-size="18" fill="white" text-anchor="middle" opacity="0.7">Connecting Businesses in the DRC</text>
+</svg>
