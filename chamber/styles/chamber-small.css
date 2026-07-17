@@ -308,16 +308,13 @@ main {
 .cta-button {
     display: inline-block;
     padding: 0.8rem 2rem;
-    background-color: #a67c2e;
-    color: white;
-    text-decoration: none;
+    background-color: #c8963e;
+    color: #1a1a1a;
     font-weight: 700;
-    border-radius: 30px;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 .cta-button:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(200, 150, 62, 0.5);
+    background-color: #b8862e;
+    color: #000000;
 }
 .events-grid {
     display: grid;
