@@ -103,6 +103,39 @@
     #membersContainer.list-view .member-card .card-body .website {
         grid-column: 1 / -1;
     }
+
+    .hero img {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .events-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .weather-content {
+        grid-template-columns: 1fr 2fr;
+        align-items: start;
+    }
+
+    #forecast-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .forecast-day {
+        padding: 1rem;
+    }
+
+    .spotlights-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
     
     /* FOOTER - Desktop */
     .footer-content {
@@ -126,5 +159,22 @@
     
     main {
         padding: 2rem;
+    }
+    .hero img {
+        height: 600px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero img {
+        height: 500px;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
     }
 }
