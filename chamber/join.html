@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kinshasa Chamber of Commerce - Join Page</title>
-    <meta name="description" content="Join the Kinshasa Chamber of Commerce and connect with leading businesses in Kinshasa, Democratic Republic of the Congo. Explore membership levels and benefits to grow your network and business opportunities.">
+    <meta name="description" content="Join the Kinshasa Chamber of Commerce and connect with leading businesses in Kinshasa, Democratic Republic of the Congo. Explore membership levels and benefits.">
     <meta name="author" content="Jonathan KOLA MONGENGO">
     <link rel="icon" href="images/logo.svg" type="image/svg+xml">
     <meta property="og:title" content="Kinshasa Chamber of Commerce - Join">
@@ -60,11 +60,11 @@
                     <label for="title">Organization Title</label>
                     <input type="text" id="title" name="title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters, letters, spaces, and hyphens only">
                     <label for="email">Email Address:*</label>
-                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@company.com">
+                    <input type="email" id="email" name="email" required autocomplete="email" placeholder="example@company.com" title="Enter your email address">
                     <label for="phone">Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required autocomplete="tel"> 
+                    <input type="tel" id="phone" name="phone" required autocomplete="tel" title="Enter your mobile phone number"> 
                     <label for="organization">Business/Organization Name:*</label>
-                    <input type="text" id="organization" name="organization" required autocomplete="organization">
+                    <input type="text" id="organization" name="organization" required autocomplete="organization" title="Enter your business or organization name">
                     <label for="membership">Membership Level:*</label>
                     <select id="membership" name="membership" required>
                          <option value="">Select a level...</option>
@@ -74,7 +74,7 @@
                          <option value="gold">Gold Membership</option>
                     </select>
                     <label for="description">Business/Organization Description:</label>
-                    <textarea id="description" name="description" rows="4"></textarea>
+                    <textarea id="description" name="description" rows="4" title="Describe your business or organization"></textarea>
                     <input type="hidden" id="timestamp" name="timestamp">
                     <button type="submit" class="submit-btn">Join the chamber</button>
                 </form>

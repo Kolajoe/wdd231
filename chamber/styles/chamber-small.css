@@ -496,7 +496,7 @@ main {
 
 .membership-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1s);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
 }
 
 .np-card {
@@ -569,7 +569,7 @@ main {
     text-decoration: none;
     border-radius: 25px;
     font-weight: 500;
-    font-size: 0.9;
+    font-size: 0.9rem;
     transition: background-color 0.3s;
     margin-top: auto;
 }
@@ -648,8 +648,8 @@ main {
     position: absolute;
     top: 1rem;
     right: 1rem;
-    background: none;
-    border: none;
+    background: #333333;
+    border-radius: 50%;
     font-size: 2rem;
     cursor: pointer;
     color: #999;
@@ -718,7 +718,7 @@ main {
 .join-form select:focus,
 .join-form textarea:focus {
     outline: none;
-    border-color: vr(--primary-color);
+    border-color: var(--primary-color);
     box-shadow: 0 0 0 3px rgba(26, 58, 92, 0.15);
     background: white;
 }
@@ -834,7 +834,7 @@ main {
     border-bottom: 1px solid #eee;
 }
 
-.summary-item::last-child {
+.summary-item:last-child {
     border-bottom: none;
 }
 
@@ -1090,7 +1090,7 @@ footer {
     }
 }
 
-@media (min-width: 1024) {
+@media (min-width: 1024px) {
     .thankyou {
         padding: 4rem;
         max-width: 900px;
