@@ -163,6 +163,18 @@
     .hero img {
         height: 600px;
     }
+
+    .join-layout {
+        gap: 4rem;
+    }
+
+    .join-form {
+        padding: 3rem;
+    }
+
+    .cards-grid {
+        gap: 2rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -175,6 +187,37 @@
     }
 
     .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .join-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        align-items: start;
+    }
+
+    .join-form {
+        padding: 2.5rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .membership-card {
+        padding: 1.5rem;
+    }
+
+    .membership-modal {
+        max-width: 600px;
+    }
+
+    .modal-content {
+        padding: 2.5rem;
+    }
+
+    .join-intro {
         font-size: 1.2rem;
     }
 }

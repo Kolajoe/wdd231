@@ -447,6 +447,431 @@ main {
     font-weight: 500;
 }
 
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership-card {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.membership-card:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.membership-card:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.membership-card:nth-child(3) {
+    animation-delay: 0.5s;
+}
+
+.membership-card:nth-child(4) {
+    animation-delay: 0.7s;
+}
+
+.membership-card {
+    background: white;
+    border-radius: 12px;
+    padding: 1.2rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.8);
+    text-align: center;
+    border-top: 5px solid #ccc;
+    transition: transform 0.3s, box-shadow 0.3s;
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.membership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1s);
+}
+
+.np-card {
+    border-top-color: #6c757d;
+}
+.np-card .price {
+    color: #6c757d;
+}
+
+.bronze-card {
+    border-top-color: #cd7f32;
+}
+
+.bronze-card .price {
+    color: #cd7f32;
+}
+
+.silver-card {
+    border-top-color: #c0c0c0;
+}
+
+.silver-card .price {
+    color: #7a7a7a;
+}
+
+.gold-card {
+    border-top-color: #ffd700;
+}
+
+.gold-card .price {
+    color: #b8860b;
+}
+
+.membership-card h3 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 0.3rem;
+}
+
+.membership-card .price {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 0.8rem;
+}
+
+.membership-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.membership-card ul li {
+    padding: 0.3rem 0;
+    font-size: 0.9rem;
+    color: #555;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.membership-card ul li:last-child {
+    border-bottom: none;
+}
+
+.learn-more {
+    display: inline-block;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--primary-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 0.9;
+    transition: background-color 0.3s;
+    margin-top: auto;
+}
+
+.learn-more:hover {
+    background-color: var(--secondary-color);
+    transform: scale(1.05);
+}
+
+.membership-modal {
+    border: none;
+    border-radius: 16px;
+    padding: 0;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    animation: modalOpen 0.3s ease forwards;
+}
+
+@keyframes modalOpen {
+    0% {
+        opacity: 0;
+        transform: scale(0.9) translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.membership-modal::backdrop {
+    background: rgba(0,0,0,0.5);
+    backdrop-filter: blur(4px);
+}
+
+.modal-content {
+    padding: 2rem;
+    position: relative;
+}
+
+.modal-content h2 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.3rem;
+}
+
+.modal-content h3 {
+    color: var(--secondary-color);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+}
+
+.modal-content ul li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #f0f0f0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.modal-content ul li:last-child {
+    border-bottom: none;
+}
+
+.modal-content p strong {
+    color: var(--primary-color);
+}
+
+.close-modal {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.3s, transform 0.2s;
+    line-height: 1;
+    padding: 0.2rem 0.5rem;
+}
+
+.close-modal:hover {
+    color: #333;
+    transform: rotate(90deg);
+}
+
+.join-intro {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+    max-width: 800px;
+}
+
+.join-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    margin-top: 1rem;
+}
+
+.join-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 2px rgba(0,0,0,0.1);
+}
+
+.join-form h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.join-form label {
+    display: block;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.join-form input,
+.join-form select,
+.join-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background: #fafafa;
+}
+
+.join-form input:focus,
+.join-form select:focus,
+.join-form textarea:focus {
+    outline: none;
+    border-color: vr(--primary-color);
+    box-shadow: 0 0 0 3px rgba(26, 58, 92, 0.15);
+    background: white;
+}
+
+.join-form input:invalid:not(:placeholder-shown) {
+    border-color: #dc3545;
+}
+
+.join-form input:valid:not(:placeholder-shown) {
+    border-color: #28a745;
+}
+
+.join-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 0.9rem;
+    margin-top: 1.5rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    letter-spacing: 0.5px;
+}
+
+.submit-btn:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(200, 150, 62, 0.4);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+}
+
+.membership-cards {
+    background: transparent;
+    padding: 0;
+    box-shadow: none;
+}
+
+.membership-cards h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.thankyou {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.thankyou h1 {
+    color: var(--primary-color, #1a3a5c);
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.thankyou h1::before {
+    content: "🎉 ";
+}
+
+.thankyou-message {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.thankyou h2 {
+    color: var(--primary-color, #1a3a5c);
+    font-size: 1.4rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid var(--secondary-color, #c8963e);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    text-align: left;
+    margin: 1.5rem 0;
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #eee;
+}
+
+.summary-item::last-child {
+    border-bottom: none;
+}
+
+.summary-item .label {
+    font-weight: 600;
+    color: var(--primary-color, #1a3a5c);
+}
+
+.summary-item span:last-child {
+    color: #333;
+    font-weight: 500;
+}
+
+.thankyou .cta-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2.5rem;
+    background: var(--primary-color, #1a3a5c);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 700;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+    border: none;
+    cursor: pointer;
+}
+
+.thankyou .cta-button:hover {
+    background: var(--secondary-color, #c8963e);
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(200, 150, 62, 0.4);
+}
+
+.thankyou .cta-button:active {
+    transform: scale(0.98);
+}
+
 /* FOOTER */
 footer {
     background: var(--primary-color);
@@ -531,5 +956,164 @@ footer {
     .cta-button {
         padding: 0.6rem 1.5rem;
         font-size: 0.9rem;
+    }
+
+    .join-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .thankyou {
+        padding: 3rem;
+    }
+
+    .thankyou h1 {
+        font-size: 2.8rem;
+    }
+
+    .summary-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem 2rem;
+        padding: 2rem;
+    }
+
+    .summary-item {
+        border-bottom: none;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    .summary-item:nth-last-child(-n+2) {
+        border-bottom: none;
+    }
+
+    .thankyou .cta-button {
+        padding: 0.9rem 3rem;
+        font-size: 1.05rem;
+    }
+
+    .thankyou .cta-button:hover {
+        transform: scale(1.05);
+    }
+}
+
+@media (max-width: 480px) {
+    .join-form {
+        padding: 1.2rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-card {
+        padding: 1rem;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+    }
+
+    .thankyou {
+        padding: 1.2rem;
+        margin: 0 0.5rem;
+    }
+
+    .thankyou h1 {
+        font-size: 1.6rem;
+    }
+
+    .thankyou h1::before {
+        content: "🎉";
+        display: block;
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .thankyou-message {
+        font-size: 1rem;
+    }
+
+    .thankyou h2 {
+        font-size: 1.2rem;
+    }
+
+    .summary-grid {
+        padding: 1rem;
+        gap: 0.5rem;
+    }
+
+    .summary-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+        padding: 0.4rem 0;
+    }
+
+    .summary-item .label {
+        font-size: 0.85rem;
+    }
+
+    .summary-item .label {
+        font-size: 0.85rem;
+    }
+
+    .summary-item span:last-child {
+        font-size: 0.95rem;
+        word-break: break-word;
+    }
+
+    .thankyou .cta-button {
+        padding: 0.7rem 1.8rem;
+        font-size: 0.95rem;
+        width: 100%;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .thankyou {
+        padding: 1.8rem;
+        margin: 0.1rem;
+    }
+
+    .summary-grid {
+        padding: 1.2rem;
+    }
+
+    .thankyou .cta-button {
+        padding: 0.8rem 2rem;
+    }
+}
+
+@media (min-width: 1024) {
+    .thankyou {
+        padding: 4rem;
+        max-width: 900px;
+    }
+
+    .thankyou h1 {
+        font-size: 3.2rem;
+    }
+
+    .summary-grid {
+        padding: 2.5rem;
+        gap: 0.8rem 3rem;
+    }
+
+    .summary-item {
+        padding: 0.8rem 0;
+    }
+
+    .summary-item .label {
+        font-size: 1.05rem;
+    }
+
+    .summary-item span:last-child {
+        font-size: 1.05rem;
     }
 }
