@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan 6 DRC Energy & Materials Research Hub</title>
+    <meta name="description" content="Site plan for the DRC Energy &  Materials Research Hub project, including site name, purpose, scenarios, color scheme, typography, and wireframe.">
+    <meta name="author" content="Jonathan KOLA MONGENGO">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* ==== CSS Reset ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /*  ====== Variables ======= */
+        :root {
+            --primary-color: #1a3a5c;
+            --secondary-color: #c8963e;
+            --accent-color: #2a7f6e;
+            --text-light: #ffffff;
+            --text-dark: #333333;
+            --text-muted: #555555;
+            --bg-light: #f4f4f4;
+            --bg-white: #ffffff;
+            --border-light: #dddddd;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* ==== Global Styles ==== */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.7;
+            padding: 1.5rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: var(--bg-white);
+            padding: 2.5rem;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        /* ==== Header ==== */
+        header {
+            text-align: center;
+            padding-bottom: 1.5rem;
+            border-bottom: 4px solid var(--secondary-color);
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: var(--primary-color);
+            letter-spacing: 1px;
+        }
+
+        header .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            font-weight: 300;
+        }
+
+        header .badge {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.3rem 1.2rem;
+            background: var(--secondary-color);
+            color: var(--text-light);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* ===== Sections ==== */
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--secondary-color);
+            padding-bottom: 0.4rem;
+            margin-bottom: 1.2rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-top: 1rem;
+            margin-bottom: 0.4rem;
+        }
+
+        p {
+            color: var(--text-dark);
+            margin-bottom: 0.8rem;
+        }
+
+        /* ===== Lists ==== */
+        ul, ol {
+            padding-left: 1.8rem;
+            margin-bottom: 1rem;  
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        /* ==== Color Palette ==== */
+        .color-palette {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .color-swatch {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 120px;
+        }
+
+        .color-swatch .color-box {
+            width: 100%;
+            height: 70px;
+            border-radius: 8px;
+            border: 2px solid var(--border-light);
+            margin-bottom: 0.4rem;
+        }
+
+        .color-swatch .color-name {
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .color-swatch .color-hex {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .color-swatch .color-usage {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-style: italic;
+        }
+
+        /* ==== Typography Preview ==== */
+        .font-preview {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin: 1rem 0;
+            padding: 1.5rem;
+            background: var(--bg-light);
+            border-radius: var(--radius);
+        }
+
+        .font-preview .font-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .font-preview .font-item .label {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .font-preview .font-item .sample {
+            font-size: 1.8rem;
+            margin-top: 0.2rem;
+        }
+
+        .font-roboto-heading {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 900;
+        }
+
+        .font-roboto-body {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+
+        .font-roboto-accent {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            font-style: italic;
+        }
+
+        /* ==== Wireframes ==== */
+        .wireframe-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .wireframe-item {
+            background: var(--bg-light);
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            border: 2px solid var(--border-light);
+        }
+
+        .wireframe-item h3 {
+            text-align: center;
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+
+        .wireframe-svg {
+            width: 100%;
+            max-width: 500px;
+            display: bloc;
+            margin: 0 auto;
+        }
+
+        .wireframe-item .caption {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 0.5rem;
+        }
+
+        /* ==== Footer ==== */
+        footer {
+            margin-top: 2.5rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid var(--border-light);
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* ==== Responsive ==== */
+        @media (max-width: 768px) {
+            body {
+                padding: 0.8rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .wireframe-container {
+                grid-template-columns: 1fr;
+            }
+
+            .color-palette {
+                justify-content: center;
+            }
+
+            .font-preview {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 1rem;
+            }
+
+            header h1 {
+                font-size: 1.4rem;
+            }
+
+            h2 {
+                font-size: 1.3rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>DRC Energy &amp; Materials Research Hub</h1>
+            <p class="substitle">Site Plan - WDD 231 Individual Project</p>
+            <span class="badge">Jonathan KOLA MONGENGO</span>
+        </header>
+
+        <section>
+            <h2>1. Site Name</h2>
+            <p><strong>DRC Energy &amp; Materials Research Hub</strong></p>
+            <p>Why this name?<strong> Energy</strong> and<strong> Materials Science</strong> in the<strong> Democratic Republic of the Congo</strong>. It positions the site as a central hub for researchers, students, and professionals interested in these fields. The name is professional, descriptive, and clearly communicates the site's purpose.</p>
+            <p><strong>Domain Availability (optional):</strong>drc-energy-materials-hub.org</p>
+        </section>
+
+        <section>
+            <h2>2. Site Purpose</h2>
+            <p>The <strong>DRC Energy &amp; Materials Research Hub</strong> serves as an informational platform dedicated to advancing research and innovation in energy and materials science in the Democratic Republic of the Congo. The site provides:</p>
+            <ul>
+                <li><strong>Research Showcase:</strong> Current research projects in materials science, energy, and petrochemistry conducted at the University of Kinshasa and partner institutions.</li>
+                <li><strong>Publication Archive:</strong> A collection of scientific publications, articles, and reports related to energy and materials research in the DRC.</li>
+                <li><strong>Collaboration Hub:</strong> Information about research partners, laboratories, and opportunities for collaboration.</li>
+                <li><strong>Researcher Profile:</strong> A biography and contact information for Jonathan KOLA MONGENGO, the site creator and a petrochemical engineer and researcher.</li>
+            </ul>
+            <p>The site aims to bridge the gap between the chemical and computer sciences by showcasing how digital solutions can address challenges in the petroleum, energy, and materials industries.</p>
+        </section>
+        <section>
+            <h2>3. Scenarios</h2>
+            <h3>Scenario 1</h3>
+            <p><strong>Visitor:</strong> A researcher from a European university is looking for partners in Africa a joint research project on sustainable energy materials.</p>
+            <p><strong>Question:</strong>"Which research projects are currently being conducted at the University of Kinshasa in the field of energy materials?"</p>
+            <p><strong>Answer Found:</strong>The <strong>Research</strong>page lists current projects, including "Development of Local Materials for Energy Storage" and "Evaluation of Energy Resources in the DRC."</p>
+            
+            <h3>Scenario 2</h3>
+            <p><strong>Visitor:</strong> A Congolese student interested in pursuing a career in petrochemical engineering is looking for information about academic and research opportunities.</p>
+            <p><strong>Question:</strong> "Who is the researcher behind this site, and how can I contact them for collaboration or mentorship?"</p>
+            <p><strong>Answer Found:</strong> The <strong>Contact / About</strong> page provides a biography of Jonathan KOLA MONGENGO, his academic background, and contact information including email, LinkedIn, and GitHub links.</p>
+            
+            <h3>Scenario 3</h3>
+            <p><strong>Visitor:</strong> An industry professional from a mining company is interested in the latest research on critical minerals and materials extraction in the DRC.</p>
+            <p><strong>Question:</strong> "What publications and research findings are available on materials science in the DRC?"</p>
+            <p><strong>Answer Found:</strong> The <strong>Research</strong> page features a list of publications, including "Innovative Materials for Energy Storage" and "Petrochemical Industry in the DRC."</p>
+        </section>
+        <section>
+            <h2>4. Color Scheme</h2>
+            <p>The following color have been selected to created a professional, trustworthy, and visually cohesive identify for the DRC Energy &amp; Materials Research Hub.</p>
+            <div class="color-palette">
+                <div class="color-swatch">
+                    <div class="color-box" style="background: #1a3a5c;"></div>
+                    <span class="color-name">Primary Blue</span>
+                    <span class="color-hex">#1a3a5c</span>
+                    <span class="color-usage">Heading, buttons, footer, navigation</span>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background:#c8963e;"></div>
+                    <span class="color-name">Accent Gold</span>
+                    <span class="color-hex">#c8963e</span>
+                    <span class="color-usage">Highlight, accents, icons, emphasis</span>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background: #ffffff; border-color: #cccccc;"></div>
+                    <span class="color-name">White</span>
+                    <span class="color-hex">#ffffff</span>
+                    <span class="color-usage">Background, text on dark backgrounds</span>
+                </div>
+                <div class="color-swatch">
+                    <div class="color-box" style="background:#333333;"></div>
+                        <span class="color-name">Dark Text</span>
+                        <span class="color-hex">#333333</span>
+                        <span class="color-usage">Body text, paragraph content</span>
+                </div>
+            </div>
+            <p><strong>Why these colors?</strong></p>
+            <ul>
+                <li><strong>Primary Blue (#1a3a5c):</strong>Represent trust, professionalism, and stability ideal for a research-oriented site.</li>
+                <li><strong>Accent Gold (#c8963e):</strong> Symbolizes excellence, value, and energy — a nod to the petroleum and energy industries.</li>
+                <li><strong>Accent Green (#2a7f6e):</strong> Represents sustainability, growth, and environmental consciousness — relevant for renewable energy and materials research.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>5. Typography</h2>
+            <p>The site uses the <strong>Roboto</strong> font family from Google Fonts for its clean, modern, and highly readable design.</p>
+            
+            <div class="font-preview">
+                <div class="font-item">
+                    <span class="label">Headings (H1, H2, H3)</span>
+                    <div class="sample font-roboto-heading" style="font-size: 2rem; font-weight: 900;">Roboto Bold</div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Used for: Page titles, section headings, navigation</div>
+                </div>
+                
+                <div class="font-item">
+                    <span class="label">Body Text</span>
+                    <div class="sample font-roboto-body" style="font-size: 1.2rem; font-weight: 400;">Roboto Regular</div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Used for: Paragraphs, lists, descriptions, form labels</div>
+                </div>
+                
+                <div class="font-item">
+                    <span class="label">Accent / Special</span>
+                    <div class="sample font-roboto-accent" style="font-size: 1.2rem; font-weight: 300; font-style: italic;">Roboto Light Italic</div>
+                    <div style="font-size: 0.8rem; color: var(--text-muted);">Used for: Subtitles, quotes, highlighted text, badges</div>
+                </div>
+            </div>
+            
+            <p><strong>Why Roboto?</strong> Roboto is a highly versatile, modern sans-serif font that offers excellent readability on both desktop and mobile devices. Its multiple weights allow for clear visual hierarchy and a professional, clean aesthetic.</p>
+        </section>
+        
+        <!-- ===== WIREFRAMES ===== -->
+        <section>
+            <h2>6. Wireframes</h2>
+            <p>The following wireframes illustrate the layout of the home page for both mobile (small viewport) and desktop (large viewport).</p>
+            
+            <div class="wireframe-container">
+                <!-- Mobile Wireframe -->
+                <div class="wireframe-item">
+                    <h3>📱 Mobile View</h3>
+                    <svg class="wireframe-svg" viewBox="0 0 320 600" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Phone frame -->
+                        <rect x="0" y="0" width="320" height="600" fill="#ffffff" stroke="#cccccc" stroke-width="2" rx="10"/>
+                        
+                        <!-- Header -->
+                        <rect x="10" y="10" width="40" height="30" fill="#1a3a5c" rx="4"/>
+                        <rect x="60" y="15" width="80" height="20" fill="#1a3a5c" rx="4"/>
+                        <circle cx="290" cy="25" r="12" fill="#1a3a5c"/>
+                        
+                        <!-- Hero -->
+                        <rect x="10" y="50" width="300" height="140" fill="#e0e0e0" rx="8"/>
+                        <rect x="40" y="90" width="240" height="20" fill="#1a3a5c" rx="4"/>
+                        <rect x="60" y="115" width="200" height="15" fill="#666" rx="4"/>
+                        <rect x="100" y="140" width="120" height="25" fill="#c8963e" rx="12"/>
+                        
+                        <!-- Mission -->
+                        <rect x="10" y="205" width="150" height="18" fill="#1a3a5c" rx="4"/>
+                        <rect x="10" y="228" width="300" height="10" fill="#ccc" rx="4"/>
+                        <rect x="10" y="243" width="280" height="10" fill="#ccc" rx="4"/>
+                        
+                        <!-- Research Areas (2 columns) -->
+                        <rect x="10" y="270" width="140" height="80" fill="#f0f0f0" rx="6"/>
+                        <rect x="10" y="360" width="140" height="80" fill="#f0f0f0" rx="6"/>
+                        <rect x="160" y="270" width="140" height="80" fill="#f0f0f0" rx="6"/>
+                        <rect x="160" y="360" width="140" height="80" fill="#f0f0f0" rx="6"/>
+                        
+                        <!-- Footer -->
+                        <rect x="10" y="470" width="300" height="1" fill="#ccc"/>
+                        <rect x="80" y="485" width="160" height="12" fill="#666" rx="4"/>
+                        <rect x="100" y="505" width="120" height="10" fill="#999" rx="4"/>
+                        <rect x="120" y="525" width="80" height="10" fill="#999" rx="4"/>
+                    </svg>
+                    <p class="caption">Single column layout with stacked cards and hamburger menu.</p>
+                </div>
+                
+                <!-- Desktop Wireframe -->
+                <div class="wireframe-item">
+                    <h3>🖥️ Desktop View</h3>
+                    <svg class="wireframe-svg" viewBox="0 0 500 450" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Desktop frame -->
+                        <rect x="0" y="0" width="500" height="450" fill="#ffffff" stroke="#cccccc" stroke-width="2" rx="10"/>
+                        
+                        <!-- Header -->
+                        <rect x="15" y="10" width="50" height="35" fill="#1a3a5c" rx="4"/>
+                        <rect x="75" y="15" width="120" height="25" fill="#1a3a5c" rx="4"/>
+                        <rect x="290" y="15" width="60" height="25" fill="#1a3a5c" rx="4"/>
+                        <rect x="360" y="15" width="60" height="25" fill="#1a3a5c" rx="4"/>
+                        <rect x="430" y="15" width="55" height="25" fill="#c8963e" rx="4"/>
+                        
+                        <!-- Hero -->
+                        <rect x="15" y="55" width="470" height="130" fill="#e0e0e0" rx="8"/>
+                        <rect x="100" y="85" width="300" height="22" fill="#1a3a5c" rx="4"/>
+                        <rect x="130" y="112" width="240" height="15" fill="#666" rx="4"/>
+                        <rect x="180" y="135" width="140" height="28" fill="#c8963e" rx="12"/>
+                        
+                        <!-- 3-column layout -->
+                        <rect x="15" y="200" width="140" height="100" fill="#f0f0f0" rx="6"/>
+                        <rect x="180" y="200" width="140" height="100" fill="#f0f0f0" rx="6"/>
+                        <rect x="345" y="200" width="140" height="100" fill="#f0f0f0" rx="6"/>
+                        
+                        <!-- Section title -->
+                        <rect x="15" y="315" width="180" height="18" fill="#1a3a5c" rx="4"/>
+                        
+                        <!-- 2-column layout -->
+                        <rect x="15" y="340" width="220" height="80" fill="#f0f0f0" rx="6"/>
+                        <rect x="265" y="340" width="220" height="80" fill="#f0f0f0" rx="6"/>
+                        
+                        <!-- Footer -->
+                        <rect x="15" y="435" width="470" height="1" fill="#ccc"/>
+                    </svg>
+                    <p class="caption">Multi-column layout with horizontal navigation and expanded content.</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- ===== FOOTER ===== -->
+        <footer>
+            <p>&copy; <span id="currentyear"></span> Jonathan KOLA MONGENGO — WDD 231 Individual Project</p>
+            <p><strong>DRC Energy &amp; Materials Research Hub</strong> — Site Plan Document</p>
+        </footer>
+        
+    </div>
+    
+    <script>
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+    </script>
+    
+</body>
+</html>
