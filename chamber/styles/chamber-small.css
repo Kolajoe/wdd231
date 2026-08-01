@@ -5,7 +5,11 @@
     --accent-color: #2a7f6e;
     --light-bg: #f4f4f4;
     --text-color: #333;
+    --text-light: #ffffff;
+    --text-dark: #333333;
+    --bg-white: #ffffff;
     --white: #ffffff;
+    --bg-light: #f4f4f4;
     --shadow: 0 4px 6px rgba(0,0,0,0.1);
     --transition: all 0.3s ease;
 }
@@ -872,6 +876,114 @@ main {
     transform: scale(0.98);
 }
 
+/* ===== DISCOVER PAGE - SMALL SCREENS (320px - 640px) ===== */
+
+.discover-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+.discover-card {
+    background: var(--bg-white);
+    border-radius: var(--radius);
+    padding: 1rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.discover-card figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.discover-card figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Pas d'effet hover sur mobile */
+}
+
+.discover-card h2 {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin: 0.5rem 0;
+}
+
+.discover-card address {
+    font-style: normal;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.discover-card p {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    margin-bottom: 0.8rem;
+}
+
+.learn-more-btn {
+    padding: 0.4rem 1.2rem;
+    background: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 0.9rem;
+    transition: background-color var(--transition);
+}
+
+.learn-more-btn:hover {
+    background: var(--secondary-color);
+}
+
+/* ===== VISIT MESSAGE ===== */
+.visit-message {
+    background: var(--secondary-color);
+    color: var(--text-light);
+    padding: 1rem;
+    border-radius: var(--radius);
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 500;
+}
+
+.visit-message .welcome {
+    background: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.visit-message .soon {
+    background: var(--accent-color);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.visit-message .days {
+    background: var(--primary-color);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.discover-intro {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+
 /* FOOTER */
 footer {
     background: var(--primary-color);
@@ -890,12 +1002,14 @@ footer {
 
 .footer-content h3,
 .footer-content h4 {
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 
 .footer-content p {
     margin: 0.3rem 0;
     font-size: 0.9rem;
+    color: #dddddd;
 }
 
 .footer-links ul {
@@ -911,9 +1025,11 @@ footer {
     color: var(--white);
     text-decoration: none;
     font-size: 0.9rem;
+    transition: color 0.3s ease;
 }
 
 .footer-links ul li a:hover {
+    color: var(--secondary-color, #c8963e);
     text-decoration: underline;
 }
 
@@ -926,6 +1042,7 @@ footer {
     width: 32px;
     height: 32px;
     filter: brightness(0) invert(1);
+    transition: filter 0.3s ease;
 }
 
 .footer-bottom {
