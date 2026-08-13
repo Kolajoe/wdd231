@@ -1,0 +1,134 @@
+/* ===== MEDIA QUERIES ===== */
+
+/* Tablets and small desktops */
+@media screen and (min-width: 768px) {
+    /* Header */
+    header {
+        padding: 1rem 2rem;
+    }
+
+    .logo-title {
+        font-size: 1.5rem;
+    }
+
+    #hamburgerBtn {
+        display: none;
+    }
+
+    /* Navigation */
+    nav {
+        max-height: 100%;
+        overflow: visible;
+        padding: 0 2rem;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        gap: 0;
+    }
+
+    nav ul li {
+        border-bottom: none;
+    }
+
+    nav ul li a {
+        padding: 1rem 1.5rem;
+        border-bottom: 3px solid transparent;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        background: none;
+        border-bottom-color: var(--secondary-color);
+    }
+
+    /* Hero */
+    .hero {
+        padding: 4rem 3rem;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    /* Research Areas */
+    .areas-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Projects Grid */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact */
+    .contact-layout {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 3rem;
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* Summary */
+    .summary-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem 2rem;
+    }
+
+    .summary-item {
+        border-bottom: none;
+        padding: 0.6rem 0;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+/* Large screens */
+@media screen and (min-width: 1024px) {
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .project-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-lg);
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+    .hero {
+        padding: 2rem 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .contact-form,
+    .contact-info {
+        padding: 1rem;
+    }
+
+    .summary-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+    }
+
+    .modal-content {
+        padding: 1.5rem;
+    }
+}

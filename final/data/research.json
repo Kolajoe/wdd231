@@ -1,0 +1,132 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Development of Local Materials for Energy Storage",
+      "category": "materials",
+      "status": "ongoing",
+      "description": "This project explores the use of locally available materials in the DRC for the development of sustainable energy storage solutions, including batteries and supercapacitors.",
+      "contact": "Dr. Jonathan KOLA MONGENGO"
+    },
+    {
+      "id": 2,
+      "title": "Evaluation of Energy Resources in the DRC",
+      "category": "energy",
+      "status": "completed",
+      "description": "A comprehensive assessment of renewable and non-renewable energy resources in the Democratic Republic of the Congo, including solar, hydro, and petroleum resources.",
+      "contact": "Prof. Jean-Pierre KABWIKA"
+    },
+    {
+      "id": 3,
+      "title": "Sustainable Petrochemical Refining Techniques",
+      "category": "petro",
+      "status": "ongoing",
+      "description": "Research into more sustainable and efficient refining techniques for the petrochemical industry in the DRC, focusing on reducing environmental impact.",
+      "contact": "Dr. Jonathan KOLA MONGENGO"
+    },
+    {
+      "id": 4,
+      "title": "Composite Materials for Construction",
+      "category": "materials",
+      "status": "ongoing",
+      "description": "Developing innovative composite materials using local resources for sustainable construction applications in the DRC.",
+      "contact": "Prof. Marie-Claire KASONGO"
+    },
+    {
+      "id": 5,
+      "title": "Solar Energy Integration in Rural Communities",
+      "category": "energy",
+      "status": "planned",
+      "description": "A project to design and implement solar energy solutions for off-grid rural communities in the Democratic Republic of the Congo.",
+      "contact": "Ing. David KALALA"
+    },
+    {
+      "id": 6,
+      "title": "Biofuels from Agricultural Waste",
+      "category": "energy",
+      "status": "ongoing",
+      "description": "Converting agricultural waste into sustainable biofuels, providing alternative energy sources and waste management solutions.",
+      "contact": "Dr. Jonathan KOLA MONGENGO"
+    },
+    {
+      "id": 7,
+      "title": "Advanced Materials for Water Purification",
+      "category": "materials",
+      "status": "completed",
+      "description": "Development of low-cost, locally-sourced materials for water purification in the DRC, addressing clean water access challenges.",
+      "contact": "Prof. Jean-Pierre KABWIKA"
+    },
+    {
+      "id": 8,
+      "title": "Oil Spill Remediation Techniques",
+      "category": "petro",
+      "status": "ongoing",
+      "description": "Research into effective oil spill remediation techniques suitable for the environmental conditions of the Congo Basin.",
+      "contact": "Ing. David KALALA"
+    },
+    {
+      "id": 9,
+      "title": "Hydrogen Fuel Cell Research",
+      "category": "energy",
+      "status": "planned",
+      "description": "Exploring the potential of hydrogen fuel cells as a clean energy source for transportation and industrial applications in the DRC.",
+      "contact": "Dr. Jonathan KOLA MONGENGO"
+    },
+    {
+      "id": 10,
+      "title": "Innovative Materials for Energy Storage",
+      "category": "materials",
+      "status": "completed",
+      "description": "A study on novel materials for energy storage, including graphene-based and nanostructured materials, with a focus on sustainable production.",
+      "contact": "Prof. Marie-Claire KASONGO"
+    },
+    {
+      "id": 11,
+      "title": "Petrochemical Industry in the DRC",
+      "category": "petro",
+      "status": "completed",
+      "description": "An analysis of the petrochemical industry in the DRC, its current state, challenges, and opportunities for future growth.",
+      "contact": "Prof. Jean-Pierre KABWIKA"
+    },
+    {
+      "id": 12,
+      "title": "Renewable Energy Policy in the DRC",
+      "category": "energy",
+      "status": "ongoing",
+      "description": "A research project examining the policy frameworks for renewable energy adoption in the DRC and proposing recommendations for improvement.",
+      "contact": "Dr. Jonathan KOLA MONGENGO"
+    },
+    {
+      "id": 13,
+      "title": "Advanced Petrochemical Catalysts",
+      "category": "petro",
+      "status": "ongoing",
+      "description": "Developing more efficient catalysts for petrochemical processes, improving yields and reducing energy consumption.",
+      "contact": "Prof. Marie-Claire KASONGO"
+    },
+    {
+      "id": 14,
+      "title": "Sustainable Mining and Materials Extraction",
+      "category": "materials",
+      "status": "planned",
+      "description": "Research into sustainable practices for the mining and extraction of critical materials in the DRC.",
+      "contact": "Ing. David KALALA"
+    },
+    {
+      "id": 15,
+      "title": "Energy Efficiency in the DRC",
+      "category": "energy",
+      "status": "completed",
+      "description": "A study on energy efficiency practices and opportunities in the industrial, residential, and transportation sectors of the DRC.",
+      "contact": "Prof. Jean-Pierre KABWIKA"
+    },
+    {
+      "id": 16,
+      "title": "Materials for Renewable Energy Systems",
+      "category": "materials",
+      "status": "ongoing",
+      "description": "Exploring new materials for renewable energy systems, including photovoltaics, wind turbines, and energy storage.",
+      "contact": "Dr. Jonathan KOLA MONGENGO"
+    }
+  ]
+}
